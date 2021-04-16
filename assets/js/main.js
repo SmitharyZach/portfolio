@@ -32,6 +32,7 @@
   // Nav.
   $nav_links.on("click", function (event) {
     var href = $(this).attr("href");
+    console.log(href.charAt(0));
 
     // Not a panel link? Bail.
     if (href.charAt(0) != "#" || $panels.filter(href).length == 0) return;
